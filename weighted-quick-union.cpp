@@ -2,7 +2,7 @@
 
 using namespace std;
 
-static const int N = 10000;
+static const int N = 10;
 
 int main()
 {
@@ -15,9 +15,11 @@ int main()
 	while (cin >> p >> q)
 	{
 		for (i = p; i != id[i]; i = id[i]);
+		cout << "i is now " << i << endl;
 		for (j = q; j != id[j]; j = id[j]);
+		cout << "j is now " << j << endl;
 		if (i == j) continue;
-		if (sz[i] > sz[j])
+		if (sz[i] < sz[j])
 		{
 			id[i] = j;
 			sz[j] += sz[i];
@@ -27,6 +29,13 @@ int main()
 			id[j] = i;
 			sz[i] += sz[j];
 		}
+		cout << "id = ";
+		for (auto tmp : id)
+			cout << tmp << ", ";
+		cout << endl << "sz = ";
+		for (auto tmp2 : sz)
+			cout << tmp2 << ", ";
+		cout << endl;
 		cout << " " << p << " " << q << endl;
 	}
 }
