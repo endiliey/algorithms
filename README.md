@@ -10,4 +10,5 @@ Disclaimer : I am aware that my materials might not be free of errors. I intend 
 * Introduction to Algorithms 3rd edition, by Charles E. Leiserson, Clifford Stein, Ronald Rivest, and Thomas H. Cormen
 * Cracking the Coding Interview 6th edition, by Gayle Laakmann McDowell
 * NTU EE2008 - Data Structures and Algorithms Lecture Notes
+* https://visualgo.net/
 * Algorithms in C++, by Robert Sedgewick
